@@ -1,0 +1,84 @@
+header{
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 10px rgb(0 0 0 / 5%);
+  }
+  
+   .first
+    {
+      margin: 0;
+      padding: 0;
+      background-color: #a40a0a;
+      text-align: center;
+    }
+    
+    .one
+    {
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      height: 10vh;
+      box-sizing: content-box;
+    /*   width: 100vw; */
+    }
+    
+    .logo{
+      width: 20%;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      padding-left: 2vw;
+    /*   align-items:center; */
+    }
+    .logo img{
+      border: 2px solid darkred;
+      border-radius: 50px;
+      display: block;
+      block-size: 85%;
+    }
+    .logo img:hover{
+      cursor:pointer;
+      box-shadow: 0.5px 0.5px 3.5px 3.5px #969696; 
+    }
+    
+    .website_img{
+    /*   align-items:center; */
+      width: 60%;
+  /*     padding-top: 5px; */
+      object-fit: cover;
+    }
+    
+    .account{
+    /*   align-items:center; */
+      width: 20%;
+      padding: 10px;  
+    }
+    .account img{
+      border: 2px solid white;
+      float:right;
+      border-radius: 50px;
+      display: block;
+      block-size: 80%;
+    }
+    .account img:hover{
+      cursor:pointer;
+      box-shadow: 0.5px 0.5px 3.5px 3.5px grey; 
+    }
+  
+  .container-sm{
+    width: 80vw;
+  padding: 50px;
+  margin-top: 5vh;
+  box-shadow: 0px 0px 5px 10px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  }
+  
+  .down{
+    padding: 1%;
+    font-size: 100%;
+    text-align: center;
+    background-color: #1f1f1f;
+    color: white;
+    box-shadow: 0px 0px 5px 10px rgb(0 0 0 / 5%);
+    display:block;
+    position:fixed;
+    bottom:0;
+  }

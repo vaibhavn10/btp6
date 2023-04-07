@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BookHub</title>
+  <link rel="icon" type="image/x-icon" href="/favicon-16x16.png">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="first">
+    <div class="one">
+      <div class="logo">
+        <a href="">
+          <img src="android-chrome-192x192.png">
+        </a>
+      </div>
+      <div style="display: flex; flex-direction: row; width: 70%;">
+
+        <div class="website_img"><a href=""><img src="/bookhub_2.png" alt="image not supported"
+              style="height:10vh;"></a>
+        </div>
+
+        <div class="dropdown" style="z-index:50; position: static; 
+    margin-top: 2vh; width:40%;">
+          <a class="btn btn-danger dropdown-toggle" id="account" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="margin-right: 1px; border-radius: 50px; padding-right:10px;">
+            My Account
+          </a>
+
+          <ul class="dropdown-menu" id="one" style="background-color:#a40a0a; width: 20vw;">
+            <li><a class="dropdown-item active" href="https://BTP1.vaibhavneware.repl.co">Login</a></li>
+            <li><a class="dropdown-item active" href="https://registerpage.vaibhavneware.repl.co">Register</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item active" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="d-flex flex-row mb-3">
+    <div class="p-2">
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+          style="border-radius:25px;margin-top: 8px;">Menu</button>
+        <ul class="dropdown-menu" id="menu_list">
+          <li><a class="dropdown-item" href="https://buybook.vaibhavneware.repl.co">BUY BOOKS</a></li>
+          <li><a class="dropdown-item" href="https://sellbooks.vaibhavneware.repl.co/?">SELL BOOKS</a></li>
+          <li><a class="dropdown-item" href="#">RENT BOOKS</a></li>
+          <li><a class="dropdown-item" href="#">DONATE BOOKS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="p-2">
+      <div class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+              style="border-radius:50px;">&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-outline-success"
+              style="border-radius:50px;">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- nav tab -->
+  <div class="navigation">
+    <nav class="navbar bg-body-tertiary" style="width: 55vw;">
+      <form class="container-fluid justify-content-start" style="display:block; float:left; row-gap:20px;">
+
+        <a class="btn btn-outline-primary navbuttons" href="https://buybook.vaibhavneware.repl.co" role="button">BUY
+          BOOKS</a>
+        <a class="btn btn-outline-primary navbuttons" href="https://sellbooks.vaibhavneware.repl.co" role="button">SELL
+          BOOKS</a>
+        <a class="btn btn-outline-primary navbuttons" href="#" role="button">DONATE BOOKS</a>
+        <a class="btn btn-outline-primary navbuttons" href="#" role="button">RENT BOOKS</a>
+        <a class="btn btn-outline-primary navbuttons" href="#" role="button">BEST SELLERS</a>
+
+      </form>
+    </nav>
+
+    <div class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" size="55vw"
+            style="border-radius:50px;">&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-outline-success"
+            style="border-radius:50px;">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="categories_button">
+      <p style="margin-left: 10px;">
+        <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          All categories
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample" style="margin: 10px;">
+        <div class="card card-body">
+          <div class="categories" style="display:flex;">
+            <ul>
+              <li><a href="">&#187 Art & Photograph</a></li>
+              <li><a href="">&#187 Biographies & Memoirs</a></li>
+              <li><a href="">&#187 Business & Economics</a></li>
+              <li><a href="">&#187 Computer & Internet</a></li>
+              <li><a href="">&#187 Children & Teens</a></li>
+              <li><a href="">&#187 Dictionaries & Language</a></li>
+              <li><a href="">&#187 Environment & Geography</a></li>
+              <li><a href="">&#187 English Language Teaching</a></li>
+              <li><a href="">&#187 Fiction</a></li>
+              <li><a href="">&#187 History & Humanities</a></li>
+            </ul>
+            <ul>
+              <li><a href="">&#187 Law</a></li>
+              <li><a href="">&#187 Lifestyle</a></li>
+              <li><a href="">&#187 Literature & literary studies</a></li>
+              <li><a href="">&#187 Medicine</a></li>
+              <li><a href="">&#187 Parenting, Family & Health</a></li>
+              <li><a href="">&#187 References & Encyclopedias</a></li>
+              <li><a href="">&#187 Society & social sciences</a></li>
+              <li><a href="">&#187 Science & Mathematics</a></li>
+              <li><a href="">&#187 Technology & Engineering</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- carousel -->
+  <div class="container-fluid">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img
+            src="https://www.nj.com/resizer/GvI2yxlD7ENPyMntOLHJA1rz0yY=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/BIG66JGPOVCXZOS5IG3G3TIJJA.png"
+            alt="..." style="width: 100vw;">
+        </div>
+        <div class="carousel-item active">
+          <img
+            src="https://images.thewest.com.au/publication/C-9341377/eae68c1a894c4bc802c846dbf293aacea0fb0a94-16x9-x574y0w2969h1670.jpg"
+            alt="..." style="width: 100vw;">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://parade.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkwNTgxNDMzNDI1MzQwMjg0/best-books-of-2021.jpg"
+            alt="..." style="width: 100vw;">
+        </div>
+      </div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="main"
+    style="background-color: white; column-gap: 1vw; display: flex; flex-direction: row; padding-top:10px;">
+    <div class="left" style="overflow: hidden; display: flex; flex-direction: column;">
+
+      <div class="list-group">
+        <a class="list-group-item list-group-item-action disabled">All Categories</a>
+        <a href="">&#187 Art &
+          Photograph</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Biographies & Memoirs</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Business & Economics</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Computer & Internet</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Children & Teens</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Dictionaries & Language</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Environment & Geography</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 English Language Teaching</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Fiction</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 History & Humanities</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Law</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Lifestyle</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Literature & literary studies</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Medicine</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Parenting, Family & Health</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 References & Encyclopedias</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Society & social sciences</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Science & Mathematics</a>
+        <a href="#" class="list-group-item list-group-item-action">&#187 Technology & Engineering</a>
+      </div>
+    </div>
+
+
+    <div class="right">
+
+      <!-- Best Sellers Section -->
+      <div class="topic">
+        <a class="btn btn-outline-light" href="#" role="button">BEST SELLERS</a>
+      </div>
+      <div class="book_list">
+        <div style="display: flex; flex-direction:row; overflow:auto;">
+          <div class="images">
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img
+                  src="https://books.google.co.in/books/publisher/content?id=t5hLEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U027rrQ8kmkwDbJIMsjIj-gAa9KFA&w=1280"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Midnight Freeway</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img
+                  src="https://books.google.co.in/books/content?id=afCxg5sogvAC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0e1EP9UX4oLL8dHTN3f4QNwnyiAQ&w=1280"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The 48 laws of Power LaRue</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.pinimg.com/originals/66/61/28/666128bd93b72170fe068a68bbbbb053.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Wings of Fire</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.insider.com/61dc64764ede320018b6d478?width=700&format=jpeg&auto=webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The Great Gatsby</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.insider.com/610186180d35a9001825a2ce?width=700&format=jpeg&auto=webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Where the Crawdads Sing</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.insider.com/61dc65d91025b20018bb023a?width=700&format=jpeg&auto=webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">1984</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.insider.com/61dc67054ede320018b6d54b?width=700&format=jpeg&auto=webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The Song of Achilles</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Arrivals Section -->
+      <div class="topic">
+        <a class="btn btn-outline-light" href="#" role="button">NEW ARRIVALS</a>
+      </div>
+      <div class="book_list">
+        <div style="display: flex; flex-direction:row; overflow:auto;">
+          <div class="images">
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img
+                  src="https://books.google.co.in/books/publisher/content?id=vbQlDQAAQBAJ&pg=PA1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U28kunCdSa2FHgFt4bbD3ReCHYbBA&w=1280"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Introduction to Machine Learning with Python</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img
+                  src="https://books.google.co.in/books/publisher/content?id=t5hLEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U027rrQ8kmkwDbJIMsjIj-gAa9KFA&w=1280"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Midnight Freeway</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img
+                  src="https://books.google.co.in/books/publisher/content?id=jVB1DwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0OPvJK1GmdbgY77ykKBkFvmke5eg&w=1280"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Where the Crawdads Sing</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.insider.com/61dc64764ede320018b6d478?width=700&format=jpeg&auto=webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The Great Gatsby</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.insider.com/61dc65d91025b20018bb023a?width=700&format=jpeg&auto=webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">1984</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.insider.com/61dc67054ede320018b6d54b?width=700&format=jpeg&auto=webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The Song of Achilles</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rental Section -->
+      <div class="topic">
+        <a class="btn btn-outline-light" href="#" role="button">BOOKS FOR RENTAL</a>
+      </div>
+      <div class="book_list">
+        <div style="display: flex; flex-direction:row; overflow:auto;">
+          <div class="images">
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="/books_images/stephenhawking.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Brief History of Time</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.ebayimg.com/images/g/i5cAAOSwlZFf~b0W/s-l600.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Cryptography and Network Security </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://d2i0w0hu6hvxgc.cloudfront.net/B08FHZ5L47/f98856da/cover.jpeg" class="card-img-top"
+                  alt="...">
+                <div class="card-body">
+                  <p class="card-text">Rich Dad Poor Dad</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img
+                  src="https://d1b14unh5d6w7g.cloudfront.net/B07M6ZPRLP.01.S001.LXXXXXXX.jpg?Expires=1677614080&Signature=fXLnNqxchJLFIyHa3jsp7wCc4-F6cRxdYVAH0dHKOca-ga6mvjM0WxRi25t6xkcqluTTCPnJ4GjDGaOjIx3GZdVkVooZeoj1zUfDkZO1UFNBRIzxTKtgy0OCG2SPuLf0lOpp28iyuu2yvPmHXOmsX8fxcABdCVuoLoHpQQolp3o_&Key-Pair-Id=APKAIUO27P366FGALUMQ"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Concepts of Physics</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.pinimg.com/originals/66/61/28/666128bd93b72170fe068a68bbbbb053.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Wings of Fire</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://m.media-amazon.com/images/I/51YxwFCaijL._SX310_BO1,204,203,200_.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Mission Domination</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donate Section -->
+      <div class="topic">
+        <a class="btn btn-outline-light" href="#" role="button">DONATE FOR A CAUSE</a>
+      </div>
+      <div class="book_list">
+        <div style="display: flex; flex-direction:row; overflow:auto;">
+          <div class="images">
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://www.schandpublishing.com/uploads/bookimages/schand-books/9789352534616.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Engineering mathematics 1 </p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://i.ebayimg.com/images/g/gQEAAOSwidZf1FPZ/s-l640.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">DSA Made Easy</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://s4.scoopwhoop.com/anj/sw/acc2a256-7600-4cb3-9a33-e2e1a87bcdf1.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Madhushala</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img
+                  src="https://commendatoreblog.files.wordpress.com/2019/09/img_20190923_121229225_hdr1774545453.jpg?w=530"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Being on the empty Horses</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src=https://i.pinimg.com/originals/44/9c/7e/449c7e8bef307d435ade96ef502e25f8.jpg
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">The Dhoni Touch</p>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="card" style="width: 25vw; height: 100%;">
+                <img src="https://images.tandf.co.uk/common/jackets/agentjpg/978042910/9780429102509.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Machine Learning</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- class="right" end -->
+
+  </div><!-- class="main" end -->
+
+
+  <!--   <div class="last">
+    <div class=""></div>
+  </div> -->
+
+
+  <!--   footer section -->
+  <footer>
+    <div class="side"></div>
+    <div class="mid">
+      <div class="up">
+        <div class="web_info" style="display: grid; width: 30%;">
+          <div class="points">Company</div>
+          <div class="subpoints">
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="policy" style="display: grid; width: 40%;">
+          <div class="points">Policies</div>
+          <div class="subpoints">
+            <ul>
+              <li><a href="">Privacy Policies</a></li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Secure Shopping</a></li>
+              <li><a href="">Copyright Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="Help" style="display: grid; width: 30%;">
+          <div class="points">Help</div>
+          <div class="subpoints">
+            <ul>
+              <li><a href="">Payment</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Return</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="side"></div>
+  </footer>
+  <div class="down">
+    <div style="width:90vw;">Copyright © 2023 . Bookhub.com. All Rights Reserved</div>
+  </div>
+
+  <!--   go to top button -->
+  <div class="go_up" style="position: fixed; z-index: 1000; bottom: 10px; right: 10px;">
+    <a class="btn btn-light" href="#" role="button" style="border-radius: 25px; padding:0;"><img src="scroll_up.png"
+        style="    border-radius: 50px; width: 35px; height: 35px;"></a>
+  </div>
+
+  <script src="homescript.js"></script>
+  <script src="icons.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
